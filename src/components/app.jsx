@@ -10,22 +10,22 @@ class App extends Component {
             <div className="container-fluid">
                 <TitleBar />
                 <button className="jsbutton">
-                    <h1>JS</h1>
+                    <h2>JS</h2>
                 </button>
                 <button className="htcsbutton">
-                    <h1>HTML/CSS</h1>
+                    <h2>HTML/CSS</h2>
                 </button>
                 <button className="pybutton">
-                    <h1>Python</h1>
+                    <h2>Python</h2>
                 </button>
                 <button className="sqlbutton">
-                    <h1>SQL</h1>
+                    <h2>SQL</h2>
                 </button>
                 <button className="djangobutton">
-                    <h1>Django</h1>
+                    <h2>Django</h2>
                 </button>
                 <button className="reactbutton">
-                    <h1>React</h1>
+                    <h2>React</h2>
                 </button>
             </div>
         );
