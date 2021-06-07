@@ -40,6 +40,7 @@ class App extends Component {
                     <h2>React</h2>
                     <h4>{this.state.cardCount}</h4>
                 </button>
+                <LanguageSelection />
             </div>
         );
     }
