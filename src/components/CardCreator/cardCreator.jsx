@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../CardCreator/cardCreator.css'
 
 class CardCreator extends Component {
     constructor(props) {
@@ -29,6 +30,11 @@ class CardCreator extends Component {
             <div>
                 <form onSubmit={this.handleSubmit}>
                     <div className="row col-align">
+                        <div className="heading">
+                        <div className="row col-align">
+                            <h3>New Card:</h3>
+                        </div>
+                        </div>
                         <div className="col-md-4">
                             <label>Question:</label>
                             <input type="text" name="question" value={this.state.question} onChange={this.handleChange}/>
@@ -37,8 +43,10 @@ class CardCreator extends Component {
                             <label>Answer:</label>
                             <input type="text" name="answer" value={this.state.answer} onChange={this.handleChange}/>
                         </div>
-                        <div className="col-md-4">
-                            <input type="submit" value="add" />
+                        <div className="row col-align">
+                            <div className="col-md-4">
+                                <input type="submit" value="Add Card!" />
+                            </div>
                         </div>
                     </div>
                 </form>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import TitleBar from './TitleBar/titleBar'
-import LanguageSelection from './LanguageSelection/languageSelection'
+import CardCreator from './CardCreator/cardCreator'
 import './app.css'
 
 
@@ -9,7 +9,8 @@ class App extends Component {
         super();
         this.state = {
             languages: [],
-            cards: []
+            cards: [],
+            cardCount: 0
         }
     }
     render() {
@@ -40,7 +41,7 @@ class App extends Component {
                     <h2>React</h2>
                     <h4>{this.state.cardCount}</h4>
                 </button>
-                <LanguageSelection />
+                <CardCreator />
             </div>
         );
     }
