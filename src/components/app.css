@@ -18,29 +18,41 @@
 .jsbutton {
     background-color: #F0DB4F;
     color: #323330;
+    padding: 15px;
+    border-radius: 8px;
 }
 
 .htcsbutton {
     background-color: #E34C26;
     color: #2965F1;
+    padding: 15px;
+    border-radius: 8px;
 }
 
 .pybutton {
     background-color: #306998;
     color: #FFD43B;
+    padding: 15px;
+    border-radius: 8px;
 }
 
 .sqlbutton {
     background-color: #00758F;
     color: #F29111;
+    padding: 15px;
+    border-radius: 8px;
 }
 
 .djangobutton {
     background-color: #092E20;
     color: #FFFFFF;
+    padding: 15px;
+    border-radius: 8px;
 }
 
 .reactbutton {
     background-color: #00D8FF;
     color: #707070;
+    padding: 15px;
+    border-radius: 8px;
 }
