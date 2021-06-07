@@ -3,14 +3,14 @@ import './titleBar.css';
 
 function TitleBar(props) {
     return (
-        <div className="row row-spacer">
-            <div className="col-md-12" style={{padding: 0}}>
+        <div className="row justify-content-around">
+            <div className="col-md-4" style={{paddingTop: 65}}>
                 <div className="titlebar-nav">
-                    <h1>Flashcards</h1>
+                    <h1>Coding Flashcards</h1>
                 </div>
             </div>
         </div>
     )
 }
 
-export default TitleBar
+export default TitleBar;
