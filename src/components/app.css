@@ -14,3 +14,8 @@
 .row-spacer {
     margin-bottom: 2em;
 }
+
+.jsbutton {
+    background-color: #F0DB4F;
+    color: #323330;
+}

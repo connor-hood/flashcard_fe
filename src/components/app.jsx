@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import TitleBar from './TitleBar/titleBar'
+import './app.css'
 
 
 class App extends Component {
@@ -8,6 +9,9 @@ class App extends Component {
         return (
             <div className="container-fluid">
                 <TitleBar />
+                <button className="jsbutton">
+                    <h1>JS</h1>
+                </button>
             </div>
         );
     }
