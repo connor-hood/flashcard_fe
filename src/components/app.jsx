@@ -1,37 +1,42 @@
 import React, { Component } from 'react'
 import TitleBar from './TitleBar/titleBar'
+import LanguageSelection from './LanguageSelection/languageSelection'
 import './app.css'
 
 
 class App extends Component {
-    state = { 
-        cardCount: 0
+    constructor(){
+        super();
+        this.state = {
+            languages: [],
+            cards: []
+        }
     }
     render() {
         return (
             <div className="container-fluid">
                 <TitleBar />
-                <button className="jsbutton">
+                <button className="jsbutton" onClick={this.handleClick} id="JS">
                     <h2>JS</h2>
                     <h4>{this.state.cardCount}</h4>
                 </button>
-                <button className="htcsbutton">
+                <button className="htcsbutton" id="HTML/CSS">
                     <h2>HTML/CSS</h2>
                     <h4>{this.state.cardCount}</h4>
                 </button>
-                <button className="pybutton">
+                <button className="pybutton" id="Python">
                     <h2>Python</h2>
                     <h4>{this.state.cardCount}</h4>
                 </button>
-                <button className="sqlbutton">
+                <button className="sqlbutton" id="SQL">
                     <h2>SQL</h2>
                     <h4>{this.state.cardCount}</h4>
                 </button>
-                <button className="djangobutton">
+                <button className="djangobutton" id="Django">
                     <h2>Django</h2>
                     <h4>{this.state.cardCount}</h4>
                 </button>
-                <button className="reactbutton">
+                <button className="reactbutton" id="React">
                     <h2>React</h2>
                     <h4>{this.state.cardCount}</h4>
                 </button>
