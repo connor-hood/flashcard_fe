@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import '../CardCreator/cardCreator.css'
+import '../CardCreator/cardCreator.css';
+import axios from 'axios';
 
 class CardCreator extends Component {
     constructor(props) {
@@ -25,6 +26,16 @@ class CardCreator extends Component {
         console.log(this.state.answer);
     }
 
+    async makeGetRequest() {
+        try{
+            let response = await axios.post('http://127.0.0.1:8000/cards/');
+            console.log(response.data)
+        }
+        catch (ex) {
+            console.log('Error in API Call');
+        }
+    }
+
     render() {
         return ( 
             <div>
@@ -45,7 +56,7 @@ class CardCreator extends Component {
                         </div>
                         <div className="row col-align">
                             <div className="col-md-4">
-                                <input type="submit" value="Add Card!" />
+                                <input type="submit" value="Add Card!" onClick={this.makeGetRequest} />
                             </div>
                         </div>
                     </div>

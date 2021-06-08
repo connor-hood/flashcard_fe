@@ -1,8 +1,9 @@
 import React from 'react';
+import '../CardViewer/cardViewer.css'
 
 function CardViewer(props){
     return(
-        <div>
+        <div className="flashcard">
             <p>life</p>
         </div>
     )
