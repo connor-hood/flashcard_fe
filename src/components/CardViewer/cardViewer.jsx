@@ -15,7 +15,7 @@ function CardViewer(props){
             </div>
         </div>
         <div className="col-md-4">
-                <button onClick={() => props.nextCard()}>&gt;</button>
+                <button onClick={() => props.goToNextCard()}>&gt;</button>
             </div>
       </div>
     )
