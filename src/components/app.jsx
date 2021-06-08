@@ -17,7 +17,7 @@ class App extends Component {
     render() {
         return (
             <div className="container-fluid">
-                <TitleBar />
+                {/* <TitleBar />
                 <button className="jsbutton" onClick={this.handleClick} id="JS">
                     <h2>JS</h2>
                     <h4>{this.state.cardCount}</h4>
@@ -43,7 +43,7 @@ class App extends Component {
                     <h4>{this.state.cardCount}</h4>
                 </button>
                 <LanguageDetail />
-                <CardCreator />
+                <CardCreator /> */}
                 <CardViewer />
             </div>
         );
